@@ -1,7 +1,7 @@
 import math
 from typing import Optional, List
 
-import module_1
+# import module_1
 
 name = "Eugene"
 surname = "Gulyaev"
