@@ -27,7 +27,7 @@ class Human:
         
 
 class Student(Human):
-    def __init__(self, age, name, student_id):
+    def __init__(self, name: str, age: int = 15, student_id: int = 12233):
         Human.__init__(self, age, name)
         self.student_id = student_id
         
