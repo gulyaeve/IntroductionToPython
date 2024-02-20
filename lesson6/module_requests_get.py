@@ -9,6 +9,9 @@ r = requests.get("https://api.thecatapi.com/v1/images/search")
 if __name__ == '__main__':
     if r.ok:
         answer = r.json()
+        print(answer)
+        with open("../lesson7/test.json", "w") as file:
+            file.write(str(answer[0]))
         r_dict = dict(answer[0])
         for key, value in r_dict.items():
             print(f"{key} --- {value}")
